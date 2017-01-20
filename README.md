@@ -1,5 +1,7 @@
 # Thinkific Code Challenge Front End
 
+url - http://thinkific.zeeshansafdar.com
+
 This project is meant to consume the Thinkific code challenge api. The web application allows a user to:
 
 - Register
