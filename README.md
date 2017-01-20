@@ -1,12 +1,17 @@
-# thinkific-challenge-frontend
+# Thinkific Code Challenge Front End
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+This project is meant to consume the Thinkific code challenge api. The web application allows a user to:
+
+- Register
+- Login
+- Get their current integer
+- Get their next integer
+- Set their current integer
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `npm install` to get all the dependencies
 
-## Testing
+Run `grunt build` for building and `grunt serve` for preview.
 
-Running `grunt test` will run the unit tests with karma.
+Under app/scripts/services/ please change the `base url` for integer.js and auth.js

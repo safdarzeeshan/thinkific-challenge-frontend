@@ -18,6 +18,7 @@ angular
 
     ]).config(function($stateProvider, $httpProvider, $locationProvider){
 
+        //this is added so any request after logging in has the Auth Token in the header
         $httpProvider.interceptors.push(function ($cookies) {
             return {
                 'request': function (config) {
@@ -28,8 +29,6 @@ angular
                 }
             };
         });
-
-        // $locationProvider.html5Mode(true).hashPrefix('!');
 
         $stateProvider
         .state('landingPage',{
@@ -56,6 +55,7 @@ angular
     }).run(function ($state, Auth, $rootScope) {
         $rootScope.$on('$stateChangeStart', function(event, toState){
 
+            //to validate a user can view either pages after logging in
             if (toState.requireLogin && !Auth.$isLoggedIn()){
 
                 $state.transitionTo('landingPage');

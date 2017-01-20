@@ -19,8 +19,6 @@ angular.module('thinkificChallengeFrontendApp')
         if(!formData.$invalid){
             Auth.$login($scope.model.email, $scope.model.password)
             .then(function(response){
-                console.log(response.data.key)
-                // $http.defaults.headers.common.Authorization = 'Token ' + data.key;
                 $cookies.put('token', response.data.key);
                 $localStorage.isAuthenticated = 'true';
                 $state.go('integer');

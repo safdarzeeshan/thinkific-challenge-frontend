@@ -9,7 +9,7 @@
  */
 angular.module('thinkificChallengeFrontendApp')
   .service('Validate', function Validate() {
-    // AngularJS will instantiate a singleton by calling "new" on this function
+    // To validate login and register forms
     return {
         'message': {
             'minlength': 'This value is not long enough.',
