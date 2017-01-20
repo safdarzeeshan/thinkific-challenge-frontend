@@ -1,0 +1,26 @@
+<div class='onboarding-main col-lg-4 col-md-6 col-sm-8 col-xs-11 custom-center'>
+    <div class='onboarding-banner text-center'>
+        <h2>Number Generator</h2>
+    </div>
+    <div class="onboarding-content">
+
+        <br>
+        <br>
+        <button class="onboarding-btn integer-btn custom-center" ng-click='getCurrentInteger()'><h4>Current Integer</h4></button>
+        <br>
+        <button class="onboarding-btn integer-btn custom-center" ng-click='getNextInteger()'><h4>Next Integer</h4></button>
+
+        <br>
+        <form class="new-int-form custom-center " role="form" name="userForm" ng-submit="setNewCurrentInteger(newInteger)" >
+            <div class="input-group">
+                <input type="number" min="0" class = "form-control input-lg" ng-model="newInteger" placeholder = "Enter New Integer" required>
+                <div class="input-group-btn recipe-scrape-btn">
+                    <button class="btn" type="submit"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <button class="btn logout-btn" ng-click='logout()'>Logout</i></button>
+    </div>
+</div>

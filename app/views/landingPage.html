@@ -1,0 +1,31 @@
+<div class='onboarding-main col-lg-4 col-md-6 col-sm-8 col-xs-11 custom-center'>
+    <div class='onboarding-banner text-center'>
+        <h2>Number Generator</h2>
+    </div>
+    <div class="onboarding-content">
+        <div id="login_view" class='onboarding-userinfo'>
+            <form role="form" ng-submit="login(loginForm)" name="loginForm" novalidate>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <input name="email" id="id_email" type="text" ng-model="model.email" placeholder="Email" class="form-control user-input" required />
+                </div>
+                <div class="alert alert-danger" ng-repeat="error in errors.email">{{error}}</div>
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+                    <input name="password" id="id_password" type="password" ng-model="model.password" placeholder="Password" class="form-control user-input" required />
+                </div>
+                <div class="alert alert-danger" ng-repeat="error in errors.password">{{error}}</div>
+                <div class="alert alert-danger" ng-repeat="error in errors.non_field_errors">{{error}}</div>
+                <div class="alert alert-danger" ng-if="error">{{error}}</div>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="onboarding-btn"><h3>Login</h3></button>
+            </form>
+                <button ng-click='gotoRegister()' class="onboarding-btn onboarding-btn-signup"><h3 class='signup-h3'>Sign Up</h3></button>
+        </div>
+
+    </div>
+</div>
