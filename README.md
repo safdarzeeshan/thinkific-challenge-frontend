@@ -4,9 +4,9 @@ This project is meant to consume the Thinkific code challenge api. The web appli
 
 - Register
 - Login
-- Get their current integer
-- Get their next integer
-- Set their current integer
+- Get user's current integer
+- Get user's next integer
+- Set user's current integer
 
 ## Build & development
 
